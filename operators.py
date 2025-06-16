@@ -2,6 +2,9 @@ from numba import njit
 import numpy as np
 
 
+# TODO: Stable dudx for linear advection; i.e. upwind
+
+
 @njit
 def dudx(u: np.ndarray, i: int, dx: float) -> float:
     """
